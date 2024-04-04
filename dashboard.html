@@ -108,6 +108,8 @@
                 </nav>
             </div>
         <!-- Sidebar Ends-->
+
+
         <!-- Breadcrumb-->
             <div id="layoutSidenav_content">
                 <main>
@@ -117,6 +119,124 @@
                             <li class="breadcrumb-item active">Overview</li>
                         </ol>
         <!-- Breadcrumb Ends-->
+
+        <!--Cards-->
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-warning text-white mb-4">
+                                    <div class="card-body"><div><i class="fa-solid fa-temperature-three-quarters"></i> Air Temperature</div>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <span class="small text-white">35°C</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-primary text-white mb-4">
+                                    <div class="card-body"><div><i class="fa-solid fa-droplet"></i> Humidity</div>
+                                         </div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <span class="small text-white">48%</span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-success text-white mb-4">
+                                    <div class="card-body"><div><i class="fa-solid fa-mound"></i> Soil Moisture</div>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <span class="small text-white">40%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-danger text-white mb-4">
+                                    
+                                    <div class="card-body"><div><i class="fa-solid fa-microscope"></i> Soil pH Level</div>
+                                    </div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <span class="small text-white">6</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+        <!--Cards End-->
+
+        
+                        <div class="row">
+                        
+
+
+                            <!--Alert-->
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fa-solid fa-bell"></i>
+                                        Alerts
+                                    </div>
+                                    <div class="card-body">
+                                        All is okay!
+                                          
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Alert Ends-->
+
+                                                        <!--To Do-->
+                                                        <div class="col-xl-6">
+                                                            <div class="card mb-4">
+                                                                <div class="card-header">
+                                                                            <i class="fa-solid fa-pen-to-square"></i>To-Do
+                                                                            <i class="fa-solid fa-pencil" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                                                                </div>
+                            
+                                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                                    <div class="modal-dialog">
+                                                                      <div class="modal-content">
+                                                                        <div class="modal-header">
+                                                                          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a New Task:</h1>
+                                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                                        </div>
+                                                                        <div class="modal-body">
+                                                                            <div class="mb-3">
+                                                                                <label for="exampleFormControlInput1" class="form-label">Task</label>
+                                                                                <input type="text" class="form-control" id="task" placeholder="Enter something to do">
+                                                                              </div>
+                                                                        </div>
+                                                                        <div class="modal-footer">
+                                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                                          <button type="submit" class="btn btn-primary">Enter</button>
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                            
+                                                                <div id="to-do-ls" class="card-body">
+                                                                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                                                                        Schedule pest control treatment for orchard.
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                                      </div>
+                            
+                                                                      <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                                                                        Order seeds for next planting season.
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                                      </div>
+                            
+                                                                      <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                                                                        Apply fertilizer to field
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                                      </div>
+                                                                      <div class="alert alert-primary alert-dismissible fade show" role="alert">
+                                                                        Schedule pest control treatment for orchard.
+                                                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                                      </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--To Do Ends-->
                         </div>
                     </div>
                 </main>
