@@ -184,7 +184,7 @@
                             <a href="#" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span> Facebook</a>
                             <a href="#" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-google mr-2"></span> Google</a>
                         </div>
-                        <p class="w-100 text-center mt-4">Already have an account? <a href="login.html" style="color: #cbcb36">Sign In</a></p>
+                        <p class="w-100 text-center mt-4">Already have an account? <a href="login.php" style="color: #cbcb36">Sign In</a></p>
                     </div>
                 </div>
             </div>
