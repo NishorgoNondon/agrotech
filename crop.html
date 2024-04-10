@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>My Farm - Crop Health Overview</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="icon" href="img/ico.png">
+    </head>
+    <body class="sb-nav-fixed">
+
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="dashboard.html"><span class="text-warning">Agro</span>Tech</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+
+        <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">Settings</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </nav>
+        <!-- Navbar Ends-->
+
+        <!-- Sidebar -->
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">My Farm</div>
+                                <a class="nav-link" href="dashboard.html">
+                                    <div class="sb-nav-link-icon"><i class="fa-solid fa-seedling" style="color: #48b931;"></i></div>
+                                    Overview
+                                </a>
+                                <a class="nav-link" href="alert.html">
+                                    <div class="sb-nav-link-icon"><i class="fa-solid fa-bell" style="color: #FFD43B;"></i></div>
+                                    Alert
+                                </a>
+
+                            <div class="sb-sidenav-menu-heading">Data</div>
+
+                                <a class="nav-link" href="crop.html">
+                                    <div class="sb-nav-link-icon"><i class="fa-solid fa-heart-pulse" style="color: #ff3d3d;"></i></div>
+                                    Crop Health
+                                </a>
+
+                                <a class="nav-link" href="soil.html">
+                                    <div class="sb-nav-link-icon"><i class="fa-solid fa-mound" style="color: #a6662b;"></i></div>
+                                    Soil Data
+                                </a>
+
+                                <a class="nav-link" href="weather.html">
+                                    <div class="sb-nav-link-icon"><i class="fa-solid fa-sun" style="color: #FFD43B;"></i></div>
+                                    Weather
+                                </a>
+                            
+                                <div class="sb-sidenav-menu-heading">Services</div>
+                        
+                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseOrder" aria-expanded="false" aria-controls="collapsePages">
+                                    <div class="sb-nav-link-icon"><i class="fa-solid fa-cart-shopping" style="color: #74C0FC;"></i></div>
+                                    Order
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                </a>
+    
+                                <div class="collapse" id="collapseOrder" aria-labelledby="headingFour" data-bs-parent="#sidenavAccordion">
+                                    <nav class="sb-sidenav-menu-nested nav">
+                                        
+                                        <a class="nav-link" href="order.html">View Products</a>
+    
+                                        <a class="nav-link" href="#">Cart</a>
+    
+                                        <a class="nav-link" href="#">Past Orders</a>
+                                    </nav>
+                                </div>
+
+
+
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseSupport" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-book-open-reader" style="color: #ffffff;"></i></div>
+                                Support
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+
+                            <div class="collapse" id="collapseSupport" aria-labelledby="headingFour" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    
+                                    <a class="nav-link" href="inbox.html">Inbox</a>
+
+                                    <a class="nav-link" href="past_issues.html">Past Issues</a>
+
+                                    <a class="nav-link" href="contact_support.html">Contact Support</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link" href="problem_archive.html">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-box-archive" style="color: #B197FC;"></i></div>
+                                Problem Archive
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Logged in as:</div>
+                        User
+                    </div>
+                </nav>
+            </div>
+        <!-- Sidebar Ends-->
+
+        <!-- Breadcrumb-->
+            <div id="layoutSidenav_content">
+                <main>
+
+                    <div class="container-fluid px-4">
+                        <h1 class="mt-4">My Farm</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Crop Health Overview</li>
+                        </ol>
+                        <div class="card mb-4">
+                            <div class="card-body">
+                                On this page, you can view all available information regarding your crops.
+                            </div>
+                        </div>
+
+                        <div class="row  row-cols-1 row-cols-md-2 g-3">
+                            <div class="col-lg-6">
+                                <div class="card text-bg-primary mb-4">
+                                    <div class="card-body">
+                                        <h5 class="p-2">Select any Crop to view details</h5>
+                                        <hr>
+                                        <select class="custom-select container-fluid">
+                                            <option selected value="rice">Rice</option>
+                                            <option value="wheat">Wheat</option>
+                                            <option value="tomato">Tomato</option>
+                                            <option value="radish">Radish</option>
+                                        </select>
+                                        
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#add_crop" id="add_crop_modal">Add a new crop</button>
+                                        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#d_crop" id="delete_crop_modal">Delete a crop</button>
+                                        <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#edit_crop" id="edit_crop_modal">Edit crop Details</button>
+                                    </div>
+                                </div>
+
+                                <!--Modal for Editing Crop Details-->
+                                <div class="modal fade" id="edit_crop" tabindex="-1" aria-labelledby="edit_crop_label" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="edit_crop_label">Edit Crop Details</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-3">
+                                                    <label for="crop-name" class="col-form-label">Crop Name:</label>
+                                                    <select class="form-select-small" id="crop_name_edit" aria-label="crop-name">
+                                                        <option selected>Rice</option>
+                                                        <option value="1">Wheat</option>
+                                                        <option value="2">Tomato</option>
+                                                        <option value="3">Radish</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="planting-date-input" class="col-form-label">Planting Date:</label>
+                                                    <input type="text" class="form-control" value="" id="planting-date-input">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="harvesting-date-input" class="col-form-label">Harvesting Date:</label>
+                                                    <input type="text" class="form-control" value="" id="harvesting-date-input">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="fertilizer-input" class="col-form-label">Fertilizer:</label>
+                                                    <input type="text" class="form-control" value="" id="fertilizer-input">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="crop-weight-input" class="col-form-label">Crop Weight</label>
+                                                    <input type="text" class="form-control" value="" id="crop-weight-input">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="harvested-area-input" class="col-form-label">Harvested Area</label>
+                                                    <input type="text" class="form-control" value="" id="harvested-area-input">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="damaged-crop-area-input" class="col-form-label">Damaged Crop Area</label>
+                                                    <input type="text" class="form-control" value="" id="damaged-crop-area-input">
+                                                </div>                                       
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Edit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                <!--Modal for Deleting Crop Details-->
+                                <div class="modal fade" id="d_crop" tabindex="-1" aria-labelledby="d_crop_label" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="d_crop_label">Delete Crop</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="crop-name" class="col-form-label">Crop Name:</label>
+                                                        <select class="form-select-small" id="crop_name_d" aria-label="crop-name">
+                                                            <option selected>Rice</option>
+                                                            <option value="1">Wheat</option>
+                                                            <option value="2">Tomato</option>
+                                                            <option value="3">Radish</option>
+                                                        </select>
+                                                    </div>                                      
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Delete</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                
+                                <!--Modal for Adding a new Crop-->
+                                <div class="modal fade" id="add_crop" tabindex="-1" aria-labelledby="add_crop_label" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="add_crop_label">Add a new crop</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="mb-3">
+                                                        <label for="a-crop-name" class="col-form-label">Crop Name:</label>
+                                                        <input type="text" class="form-control" value="" id="a-crop-name">
+
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="planting-date-a" class="col-form-label">Planting Date:</label>
+                                                        <input type="text" class="form-control" value="" id="planting-date-a">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="harvesting-date-a" class="col-form-label">Harvesting Date:</label>
+                                                        <input type="text" class="form-control" value="" id="harvesting-date-a">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="fertilizer-a" class="col-form-label">Fertilizer:</label>
+                                                        <input type="text" class="form-control" value="" id="fertilizer-a">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="crop-weight-a" class="col-form-label">Crop Weight</label>
+                                                        <input type="text" class="form-control" value="" id="crop-weight-a">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="harvested-area-a" class="col-form-label">Harvested Area</label>
+                                                        <input type="text" class="form-control" value="" id="harvested-area-a">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="damaged-crop-area-a" class="col-form-label">Damaged Crop Area</label>
+                                                        <input type="text" class="form-control" value="" id="damaged-crop-area-a">
+                                                    </div>                                       
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Add</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                
+                                
+
+                                <!--
+                                <div class="card text-bg-success mb-4">
+                                    <div class="card-body">
+                                        <h5 class="pb-2">Time until rice is ready to be harvested</h5>
+                                        <hr>
+                                        <div class="progress">
+                                            <div class="progress-bar progress-bar-striped bg-primary progress-bar-animated" role="progressbar" aria-label="Basic example" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                                          </div>
+                                    </div>
+
+                                </div>
+                                -->
+
+
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-pie me-1"></i>
+                                        Total Crops by Area
+                                    </div>
+                                    <div class="card-body"><canvas id="myPieChart" width="100%" height="50"></canvas></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card mb-4">
+                            <div class="card-header" id="crop-header">
+                                <i class="fa-brands fa-pagelines"></i> Rice
+                                    
+                            </div>
+                            <div class="card-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Planting Date</th>
+                                            <th scope="col">Harvesting Date</th>
+                                            <th scope="col">Fertilizer</th>
+                                            <th scope="col">Crop Weight</th>
+                                            <th scope="col">Harvested Area</th>
+                                            <th scope="col">Damaged Crop Weight</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>2023-12-01</td>
+                                            <td>2024-03-01</td>
+                                            <td>Nitrogen-based</td>
+                                            <td>1500.50</td>
+                                            <td>300.25</td>
+                                            <td>50.75</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                    </div>    
+                </main>
+
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>                                          
+        <script src="assets/demo/chart-pie-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+        <script src="js/form.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+            // Select the dropdown menu
+            var cropSelect = document.querySelector('.custom-select');
+            // Select the card header element
+            var cardHeader = document.querySelector('.card-header');
+
+            // Add event listener to detect changes in the dropdown selection
+            cropSelect.addEventListener('change', function() {
+                // Get the selected crop value
+                var selectedCrop = cropSelect.value;
+
+                // Update the card header text based on the selected crop
+                var cardHeader = document.getElementById('crop-header');
+                cardHeader.innerHTML = '<i class="fa-brands fa-pagelines"></i> ' + selectedCrop.charAt(0).toUpperCase() + selectedCrop.slice(1);
+
+
+                // Define static datasets for each crop
+                var cropDatasets = {
+                    'rice': {
+                        plantingDate: '2023-12-01',
+                        harvestingDate: '2024-03-01',
+                        fertilizer: 'Nitrogen-based',
+                        cropWeight: 1500.50,
+                        harvestedArea: 300.25,
+                        damagedCropWeight: 50.75
+                    },
+                    'wheat': {
+                        plantingDate: '2023-10-01',
+                        harvestingDate: '2024-02-01',
+                        fertilizer: 'Phosphorus-based',
+                        cropWeight: 1200.75,
+                        harvestedArea: 250.50,
+                        damagedCropWeight: 30.25
+                    },
+                    'tomato': {
+                        plantingDate: '2024-01-15',
+                        harvestingDate: '2024-05-15',
+                        fertilizer: 'Potassium-based',
+                        cropWeight: 800.25,
+                        harvestedArea: 150.75,
+                        damagedCropWeight: 20.50
+                    },
+                    'radish': {
+                        plantingDate: '2024-02-20',
+                        harvestingDate: '2024-04-20',
+                        fertilizer: 'Organic compost',
+                        cropWeight: 300.00,
+                        harvestedArea: 80.25,
+                        damagedCropWeight: 5.50
+                    }
+                };
+
+                // Populate the table with the selected crop's dataset
+                populateTable(cropDatasets[selectedCrop]);
+            });
+
+            // Function to populate the table with crop details
+            function populateTable(cropData) {
+                var tableBody = document.querySelector('.table tbody');
+                // Clear existing table rows
+                tableBody.innerHTML = '';
+
+                // Create a new table row for the selected crop's dataset
+                var newRow = document.createElement('tr');
+                newRow.innerHTML = `
+                    <td>${cropData.plantingDate}</td>
+                    <td>${cropData.harvestingDate}</td>
+                    <td>${cropData.fertilizer}</td>
+                    <td>${cropData.cropWeight}</td>
+                    <td>${cropData.harvestedArea}</td>
+                    <td>${cropData.damagedCropWeight}</td>
+                `;
+                // Append the new row to the table body
+                tableBody.appendChild(newRow);
+            }
+        });
+        </script>
+    </body>
+</html>
