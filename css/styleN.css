@@ -8346,3 +8346,29 @@ textarea.form-control {
         border: 1px solid transparent;
         background: #fbceb5;
         color: #fff; }
+/* Existing CSS */
+body {
+  background-image: url(images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  height: 150vh;
+}
+.highlight-text {
+  color: rgb(203, 203, 54);
+}
+
+/* Custom CSS for dropdown menu */
+select.form-control {
+  color: #000; /* Set text color to black */
+}
+select.form-control option {
+  color: #000; /* Set option text color to black */
+}
+
+/* New CSS to change text color to white */
+.w-100.text-center.mt-2 {
+  color: white;
+}
