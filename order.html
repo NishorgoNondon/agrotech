@@ -10,7 +10,16 @@
         <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <link rel="icon" href="img/ico.png">
+        <style>
+          /* Custom CSS class for limiting image size */
+          .product-image {
+            max-width: 150px; 
+            max-height: 150px; 
+          }
+        </style>
     </head>
+
     <body class="sb-nav-fixed">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <!-- Navbar Brand-->
@@ -81,7 +90,7 @@
   
                                       <a class="nav-link" href="#">Cart</a>
   
-                                      <a class="nav-link" href="#">Past Orders</a>
+                                      <a class="nav-link" href="past_order.html">Past Orders</a>
                                   </nav>
                               </div>
 
@@ -119,94 +128,77 @@
 
         <!-- Breadcrumb-->
             <div id="layoutSidenav_content">
-                <main>
+            <div class="container-fluid px-4">
+                <h1 class="mt-4">My Farm</h1>
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item active">Product Catalogue</li>
+                </ol>
 
-                    <div class="container-fluid px-4">
-                        <h1 class="mt-4">My Farm</h1>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Product Catalogue</li>
-                        </ol>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
-                                <div class="card w-100 my-2 shadow-2-strong">
-                                  <img src="https://www.world-grain.com/ext/resources/Article-Images/2020/05/Rice_AdobeStock_64819529_E.jpg?height=667&t=1591304238&width=1080" class="card-img-top">
-                                  <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">$420.69</h5>
-                                    <p class="card-text">Rice</p>
-                                    <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
-                                        <a href="#!" class="btn btn-primary shadow-0 me-1">Dealer</a>
-                                        <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
-                                      
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
-                                <div class="card w-100 my-2 shadow-2-strong">
-                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbOHiDrbm9mPN0f854V4AFvVnRgU-C_twgtxPIrHJbSA&s" class="card-img-top" />
-                                  <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">$120.00</h5>
-                                    <p class="card-text">Lentil</p>
-                                    <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
-                                      <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
-                                <div class="card w-100 my-2 shadow-2-strong">
-                                  <img src="https://m.media-amazon.com/images/I/51ebZJ+DR4L._AC_UF1000,1000_QL80_.jpg" class="card-img-top" />
-                                  <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">$120.00</h5>
-                                    <p class="card-text">Winter Jacket for Men and Women, All sizes</p>
-                                    <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
-                                      <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
-                                <div class="card w-100 my-2 shadow-2-strong">
-                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1KHK_xCFagpAtUzCcVabxEmpsDodryjUli9iKOex-DA&s" class="card-img-top" />
-                                  <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">$120.00</h5>
-                                    <p class="card-text">Winter Jacket for Men and Women, All sizes</p>
-                                    <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
-                                      <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-
-                              <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
-                                <div class="card w-100 my-2 shadow-2-strong">
-                                  <img src="https://cdn.britannica.com/94/151894-050-F72A5317/Brown-eggs.jpg" class="card-img-top" />
-                                  <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">$120.00</h5>
-                                    <p class="card-text">Winter Jacket for Men and Women, All sizes</p>
-                                    <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
-                                      <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-lg-4 col-md-6 col-sm-6 d-flex">
-                                <div class="card w-100 my-2 shadow-2-strong">
-                                  <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=1000,height=1500,quality=75,format=auto/in-resources/8845e144-8902-4204-b80f-9dc7dc2f4bcb/Images/ProductImages/Source/2400078_U.jpg" class="card-img-top" />
-                                  <div class="card-body d-flex flex-column">
-                                    <h5 class="card-title">$120.00</h5>
-                                    <p class="card-text">Winter Jacket for Men and Women, All sizes</p>
-                                    <div class="card-footer d-flex align-items-end pt-3 px-0 pb-0 mt-auto">
-                                      <a href="#!" class="btn btn-primary shadow-0 me-1">Add to cart</a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                        </div>
-                    </div>
-                    <div style="text-align: center; margin-top: 20px;">
-                      <a href="cart.html" class="btn btn-primary">Go to Cart</a>
+                <div class="card mb-4">
+                  <div class="card-body">
+                      On this page, you can view products offered by different dealers to order for your farm.
                   </div>
+                </div>
+                <div class="card mb-4">
+                  <div class="card-header">
+                    <i class="fa-solid fa-shop"></i>
+                      Product Catalogue
+                  </div>
+                  <div class="card-body">
+                      <table id="datatablesSimple">
+                          <thead>
+                              <tr>
+                                  <!--<th>Photo</th>-->
+                                  <th>Product Type</th>
+                                  <th>Product Name</th>
+                                  <th>Dealer</th>
+                                  <th></th>
+                              </tr>
+                          </thead>
+                          <tfoot>
+                              <tr>
+                                <!--<th>Photo</th>-->
+                                <th>Product Type</th>
+                                <th>Product Name</th>
+                                <th>Dealer</th>
+                                <th></th>
+                              </tr>
+                          </tfoot>
+                          <tbody>
+                              <tr>
+                                  <!--<td><img class="product-image" src="img/10.jpg"></td>-->
+                                  <td>Fertilizer</td>
+                                  <td>Nitrogen-based Fertilizer</td>    
+                                  <td>Ramzan Ali</td>
+                                  <td><button class="btn btn-success">Order</button></td>
+                              </tr>
+                              <tr>
+                                  <!--<td><img class="product-image" src="img/10.jpg"></td>-->
+                                  <td>Pesticide</td>
+                                  <td>Insecticide Spray</td>    
+                                  <td>Ramzan Ali</td>
+                                  <td><button class="btn btn-success">Order</button></td>                                          
+                              </tr>
+                              <tr>
+                                  <!--<td><img class="product-image" src="img/10.jpg"></td>-->
+                                  <td>Feed</td>
+                                  <td>Cow Feed</td>    
+                                  <td>Labu Mia</td>
+                                  <td><button class="btn btn-success">Order</button></td>                                            
+                              </tr>
+                              <tr>
+                                  <!--<td><img class="product-image" src="img/10.jpg"></td>-->
+                                  <td>Feed</td>
+                                  <td>Goat Feed</td>    
+                                  <td>Labu Mia</td>
+                                  <td><button class="btn btn-success">Order</button></td>                                          
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+              </div>                
+            </div>
+            </div>
 
 
 
