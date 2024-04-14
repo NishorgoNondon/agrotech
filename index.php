@@ -131,7 +131,7 @@
       <!-- Copyright -->
       <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
         © 2024 Copyright:
-        <a class="text-reset fw-bold" href="homepage.html">Group 10</a>
+        <a class="text-reset fw-bold" href="index.php">Group 10</a>
       </div>
       <!-- Copyright -->
     </footer>
